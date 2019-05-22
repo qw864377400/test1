@@ -43,7 +43,7 @@ function getHeartPoint(angle) {
 }
 
 function startHeartAnimation() {
-	var interval = 100;
+	var interval = 50;
 	var angle = 10;
 	var heart = new Array();
 	var animationTimer = setInterval(function () {
@@ -111,7 +111,13 @@ function timeElapse(date){
 		seconds = "0" + seconds;
 	}
 //	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds"; 
+	
+	var result = '	<img alt="" src="images/hdImg_ef9aa6e75f6bb881cd8ab3b461cd5aa71552119739454.jpg" style="width: 220px;height: 220px">';
+	
 	$("#elapseClock").html(result);
+	$("#elapseClock").css("width","450px");
+	
+	
 }
 
 function showMessages() {
