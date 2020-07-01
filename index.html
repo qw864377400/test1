@@ -27,7 +27,7 @@
     </style></head>
     <body>
     <!--start top-->
-        <div class="top">
+        <div class="top" style="font-weight:bold">
                         <marquee behavior="alternate">老大，我爱你~！</marquee>
                                                          </div>
     <!--end top-->
@@ -80,7 +80,7 @@
     $.fn.snow({
         minSize:10,
         maxSize:15,
-        newOn:500,
+        newOn:5000,
         flakeColor:"#ffffff"
     });
     });
@@ -92,7 +92,7 @@
     var mydiv=document.getElementById("text");
         mydiv.innerHTML+=str.charAt(i);
         i++;
-        var id=setTimeout(typing,10000);
+        var id=setTimeout(typing,100);
     if(i==str.length){
     clearTimeout(id);
     }
