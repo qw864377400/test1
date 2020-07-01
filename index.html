@@ -22,17 +22,17 @@
         to{transform:rotateY(360deg);}
         }
         /*start text*/
-        #text{width:500px;height:200px;color:#6fade1;margin:auto;font-size:24px;font-family:"方正喵呜体";}
+        #text{width:500px;height:200px;color:#ffffff;margin:auto;font-size:24px;font-family:"方正喵呜体";}
         /*end text*/
     </style></head>
     <body>
     <!--start top-->
         <div class="top">
-                        <marquee behavior="alternate">!</marquee>
+                        <marquee behavior="alternate">老大，我爱你~！</marquee>
                                                          </div>
     <!--end top-->
     <!--start box-->
-    <div class="box" style="margin-top:10%;">
+    <div class="box" style="margin-top:5%;">
         <div class="pic">
             <ul>
                 <li><img src="imagesCf/1.jpg" width="200" height="300" alt=""></li>
@@ -64,7 +64,7 @@
 
     <!--end box-->
     <!--start text-->
-        <div id="text"></div>
+        <div id="text" style="margin-top:20%;font-weight: bold"></div>
     <!--end text-->
         <embed src="music.mp3" hidden="true">
 
@@ -86,13 +86,13 @@
     });
 
     var i=0;
-    var str=""
+    var str="老大，我爱你！浑浑噩噩过了三四年。最后还是逃不过你的手掌心。你在我这占据着的位置，始终是没有发生任何改变，我做错了很多，所以我不敢去奢求你，我不敢去靠近你，更不敢去联系你，但，我真的爱你！"
     window.onload=function typing(){
     //获取div
     var mydiv=document.getElementById("text");
         mydiv.innerHTML+=str.charAt(i);
         i++;
-        var id=setTimeout(typing,100);
+        var id=setTimeout(typing,10000);
     if(i==str.length){
     clearTimeout(id);
     }
