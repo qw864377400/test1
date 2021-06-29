@@ -9,7 +9,13 @@
 <script src="js/jquery.min.js"></script>
 
 <div class="artboard">
-    <img src="images/sbsb.jpg" width="200px" height="200px" style="margin-left: 60%;margin-top: 30%">
+    <div id="line1" class="line1">yyds</div>
+    <div id="line2" class="line2"></div>
+    <div id="line3" class="line3"></div>
+    <div id="line4" class="line4"></div>
+    <div id="line5" class="line5"></div>
+    <div id="line6" class="line6"></div>
+    <img src="images/sbsb.jpg" width="200px" height="200px" style="margin-left: 60%;margin-top: 20%">
     <div class="hammer">
         <div class="handle">
             <div class="lines-handle">
@@ -69,20 +75,22 @@
             <div class="head-shadow-top"></div>
             <div class="head-shadow-bottom"></div>
         </div>
-
     </div>
-
-    <div id="line1" class="line1"></div>
-    <div id="line2" class="line2"></div>
-    <div id="line3" class="line3"></div>
     <div style="text-align: center;font-size: 50px;font-weight: bold"><a href="#" style="text-decoration:none;color: #000" onclick="addSpeed()">捶打加速</a></div>
+    <div style="font-size: 20px;text-align: center;font-weight: bold;color: #f59e00" id="messages">服不服</div>
 </div>
 <script type="text/javascript">
     function addSpeed() {
         let tt = $(".hammer").css("-webkit-animation-duration");
-        console.log(tt)
-        $(".hammer").css("-webkit-animation-duration","0.1s");
-        console.log(tt)
+        let message = $("#messages");
+        if(parseFloat(tt.substring(0,tt.length - 1)) == 0.1){
+           message.html("已经是最快了，服不服，锤死你！");
+           return;
+        }else {
+            message.html("加速了哦！你要继续么！当前速度 -》 " + parseFloat(tt.substring(0,tt.length - 1)));
+        }
+        let count = parseFloat(tt.substring(0,tt.length - 1)) - 0.1;
+        $(".hammer").css("-webkit-animation-duration",count + "s");
     }
 </script>
 </body>

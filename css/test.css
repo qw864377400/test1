@@ -20,10 +20,10 @@ body {
     width: 300px;
     height: 400px;
     left: 220px;
-    top: 69px;
+    top: 20px;
     transform: rotate(170deg);
     -webkit-animation-name: spinnerRotate;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
     -moz-animation-name: spinnerRotate;
@@ -293,6 +293,86 @@ body {
         transform: translate3d(-1500px, 0px, 0px);
     }
 }
+
+.line4 {
+    height: 10px;
+    width: 100px;
+    background: #18C3E8;
+    position: relative;
+    top: 450px;
+    left: 900px;
+    border-radius: 5px;
+}
+#line4 {
+    animation: lined 3s infinite;
+}
+
+
+@keyframes lined {
+    0% {
+        transform: translate3d(500px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(-1500px, 0px, 0px);
+    }
+}
+
+
+
+.line5 {
+    height: 10px;
+    width: 100px;
+    background: #18C3E8;
+    position: relative;
+    top: 450px;
+    left: 900px;
+    border-radius: 5px;
+}
+#line5 {
+    animation: linee 6s infinite;
+}
+
+
+@keyframes linee {
+    0% {
+        transform: translate3d(500px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(-1500px, 0px, 0px);
+    }
+}
+
+
+
+
+
+.line6 {
+    height: 10px;
+    width: 100px;
+    background: #18C3E8;
+    position: relative;
+    top: 450px;
+    left: 900px;
+    border-radius: 5px;
+}
+#line6 {
+    animation: linef 8s infinite;
+}
+
+
+@keyframes linef {
+    0% {
+        transform: translate3d(500px, 0px, 0px);
+    }
+    100% {
+        transform: translate3d(-1500px, 0px, 0px);
+    }
+}
+
+
+
+
+
 @-webkit-keyframes spinnerRotate {
     from {
         -webkit-transform: rotate(0deg);
