@@ -1,7 +1,7 @@
 /*
 Document: base_pages_dashboard.js
 Author: Rustheme
-Description: Custom JS code used in Dashboard Page (index.html)
+Description: Custom JS code used in Dashboard Page (index2.html)
  */
 
 var BasePagesDashboard = function() {

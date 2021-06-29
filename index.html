@@ -1,108 +1,89 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>我爱你</title>
-    <style style="text/css">
-        *{margin:0;padding:0;}
-        body{background:url("images/1.jpg");background-size:cover;}
-        /*start top*/
-        .top{width:400px;height:100px;margin:60px auto;font-size:30px;font-family:"华文行楷";color:#fff;
-        <!--background:-webkit-linear-gradient(45deg,#ff0000,#ffcc00,#ffff99,#33ccff,#00ff33,#6600ff,#333399);
-        -webkit-background-clip:text;-->}
-        /*end top*/
-        /*start box*/
-        .box{width:100px;height:100px;margin:auto;perspective:2800px;/*景深*/}
-        .box .pic{position:relative;transform-style:preserve-3d;/*3d环境*/ animation:play 50s linear infinite;/*动画名称 执行时间 匀速 无限执行*/}
-        .box ul li{list-style:none;position:absolute;top:0;left:0;}
-        /*start box*/
-        /*定义一个关键帧*/
-        @keyframes play{
-        from{transform:rotateY(0deg);}
-        to{transform:rotateY(360deg);}
-        }
-        /*start text*/
-        #text{width:500px;height:200px;color:#ffffff;margin:auto;font-size:24px;font-family:"方正喵呜体";}
-        /*end text*/
-    </style></head>
-    <body>
-    <!--start top-->
-        <div class="top" >
-                        <marquee behavior="alternate" style="font-weight:bold; text-shadow: darkgrey 5px 5px 5px 5px ;">Love you forever</marquee>
-                                                         </div>
-    <!--end top-->
-    <!--start box-->
-    <div class="box" style="margin-top:5%;">
-        <div class="pic">
-            <ul>
-                <li><img src="imagesCf/1.jpg" width="200" height="300" alt=""></li>
-                <li><img src="imagesCf/2.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/3.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/4.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/5.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/6.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/7.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/8.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/9.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/10.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/11.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/12.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/13.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/14.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/15.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/16.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/17.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/18.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/19.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/20.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/21.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/22.jpg" width="200" height="300"  alt=""></li>
-                <li><img src="imagesCf/23.jpg" width="200" height="300"  alt=""></li>
-            </ul>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+</head>
+<body>
+<script src="js/jquery.min.js"></script>
+
+<div class="artboard">
+    <img src="images/sbsb.jpg" width="200px" height="200px" style="margin-left: 60%;margin-top: 30%">
+    <div class="hammer">
+        <div class="handle">
+            <div class="lines-handle">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle cero">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle primera">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle segunda">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle tercera">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle cuarta">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle quinta">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="lines-handle sexta">
+                <div class="lines-crop one">
+                    <div class="lines-v"></div>
+                </div>
+            </div>
+            <div class="shadow-handle"></div>
+
         </div>
+
+        <div class="border one">
+            <div class="line-base"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="border two">
+            <div class="line-base right"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="top"></div>
+        <div class="head">
+            <div class="head-shadow-top"></div>
+            <div class="head-shadow-bottom"></div>
+        </div>
+
     </div>
 
-    <!--end box-->
-    <!--start text-->
-        <div id="text" style="margin-top:40%;font-weight: bold"></div>
-    <!--end text-->
-        <embed src="music.mp3" hidden="true">
-
-                                            <script src="js/jquery.min.js"></script>
-    <!--雪花-->
-        <script src="js/snow.js"></script>
-                                   <script>
-                                   $(".pic ul li").each(function(i){//遍历
-    var deg=360/$(".pic ul li").size();//size个数
-    //当前的li对象 添加css样式
-		$(this).css({"transform":"rotateY("+deg*i+"deg) translateZ(750px)"});
-
-    $.fn.snow({
-        minSize:10,
-        maxSize:15,
-        newOn:5000,
-        flakeColor:"#ffffff"
-    });
-    });
-
-    var i=0;
-    var str="老大，我爱你！浑浑噩噩过了很久。最后还是逃不过你的手掌心。你在我这占据着的位置，始终是没有发生任何改变，我做错了很多，所以我不敢去奢求你，我不敢去靠近你，更不敢去联系你，但，我真的爱你！"
-    window.onload=function typing(){
-    //获取div
-    var mydiv=document.getElementById("text");
-        mydiv.innerHTML+=str.charAt(i);
-        i++;
-        var id=setTimeout(typing,100);
-    if(i==str.length){
-    clearTimeout(id);
+    <div id="line1" class="line1"></div>
+    <div id="line2" class="line2"></div>
+    <div id="line3" class="line3"></div>
+    <div style="text-align: center;font-size: 50px;font-weight: bold"><a href="#" style="text-decoration:none;color: #000" onclick="addSpeed()">捶打加速</a></div>
+</div>
+<script type="text/javascript">
+    function addSpeed() {
+        let tt = $(".hammer").css("-webkit-animation-duration");
+        console.log(tt)
+        $(".hammer").css("-webkit-animation-duration","0.1s");
+        console.log(tt)
     }
-    }
-
-    $("img").click(function () {
-        window.location.href = "riji.html"
-    })
-    </script>
-
-
-      </body>
-        </html>
+</script>
+</body>
+</html>
